@@ -1,0 +1,31 @@
+# Terraform state and secrets
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraformrc
+terraform.rc
+
+# Ignore Terraform provider binaries
+**/terraform-provider-*
+
+# But keep the lock file (safe to commit)
+!.terraform.lock.hcl
+
+# Python virtual environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Local environment variables
+.env
+
+# Lambda package build directories
+daily_package/
+discography_package/
+
+# Lambda deployment zip files
+*.zip
+
+# macOS system files
+.DS_Store
